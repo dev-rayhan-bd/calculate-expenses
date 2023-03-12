@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section>
+        <header class="text-5xl font-semibold text-center mt-5">Money Master</header>
+        <div>
+            <img class="sm:w-full xl:w-1/2 xl:float-left mt-8 p-2 lg:mt-16" src="jar-with-rolled-banknotes-table-laptop-papers-woman-background.jpg" alt="">
+        </div>
+        <div class="lg:w-1/2 lg:float-right bg-slate-500 text-center p-8 mt-8 lg:mt-16">
+            <h1 class="text-right mr-64 text-3xl font-bold mt-8 mb-5 ml-16">Income</h1>
+            <div class="flex">
+                <h1 class="font-semibold">Income:</h1>
+                <input id="income-field" class="ml-3 p-2" type="text" >
+            </div>
+            <h1 class="text-right mr-64 text-3xl font-semibold mt-8 mb-5 ml-16">Expenses</h1>
+            
+            <div class="flex">
+                <h1 class="font-semibold">Food:</h1>
+                <input id="food" class="ml-8 p-2" type="text" >
+            </div>
+            <div class="flex mt-5">
+                <h1 class="font-semibold">Rent:</h1>
+                <input id="rent" class="ml-9 p-2" type="text" >
+            </div>
+            <div class="flex mt-5">
+                <h1 class="font-semibold">Cloth:</h1>
+                <input id="cloth" class="ml-8 p-2" type="text" >
+            </div>
+            <button id="btn-calc" class="mt-8 bg-amber-500 font-bold p-2 raunded">Calculate</button>
+            <h1 class="mt-2 text-1xl font-bold">Total Expenses <span id="expense-total">00</span></h1>
+            <h1 class="mt-2 text-1xl font-bold ">Balance: <span id="balance">00</span></h1>
+            <div class="flex mt-5">
+                <h1 class="sm:ml-16 lg:ml-52 mt-2 font-semibold">Save:</h1>
+                <input id="savings-field" class="ml-2 mr-2 p-2 h-10 w-20"  type="text" placeholder="10%" >
+                <h2 class="font-bold mt-2">%</h2>
+                <button id="btn-savings" class="ml-2 bg-amber-500 font-bold p-2 raunded">Savings</button>
+
+            </div>
+            <h1 class="mt-5 text-1xl font-bold">Savings Amount <span id="saving-total">00</span></h1>
+            <h1 class="mt-2 text-1xl font-bold ">Remain Balance: <span id="remain-balance">00</span></h1>
+           
+           
+        </div>
+    </section>
+    <script src="js/utilities.js"></script>
+    <script src="js/calc.js"></script>
+    <script src="js/bonus.js"></script>
+</body>
+</html>
